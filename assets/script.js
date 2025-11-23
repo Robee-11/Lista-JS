@@ -93,34 +93,96 @@
 // }
 
 // 03. Use while para pedir senha até o usuário digitar “1234”.
-let senha = (prompt('Digite a senha: '));
-while (senha != '1234') {
-    senha = (prompt('Senha incorreta. Digite a senha novamente: '));
-}
-alert('Senha correta! Bem-vindo!');
+// let senha = (prompt('Digite a senha: '));
+// while (senha != '1234') {
+//     senha = (prompt('Senha incorreta. Digite a senha novamente: '));
+// }
+// alert('Senha correta! Bem-vindo!');
 
 //  5. Funções
 
-// 1. Crie uma função que receba dois números e retorne a soma.5
-// 2. Crie uma função que receba um nome e retorne &quot;Olá, nome!&quot;.
-// 3. Crie uma função que calcule a média de 3 notas.
+// 01. Crie uma função que receba dois números e retorne a soma.5
+//     function soma (num1 , num2) { 
+//     return num1 + num2 ;    
+// }
+// console.log('A soma dos números é: ' + soma(5 , 10)); 
+
+// 02. Crie uma função que receba um nome e retorne Olá, nome!.
+// let nome = (prompt('Digite seu nome: '));
+// function retornaname (nome) {
+//     return 'Olá,' + nome +'!'; 
+// }
+//  console.log(retornaname(nome));
+// 03. Crie uma função que calcule a média de 3 notas.
+// function media (n1 , n2 , n3) {
+//     return (n1 + n2 +  n3 ) / 3 ; 
+// }
+// console.log('A média das suas notas são: ' + media(10 , 8 , 9)); 
 
 //  6. Arrays
 
-// 1. Crie um array com 5 nomes e mostre o primeiro e o último.
-// 2. Adicione um nome novo ao array e mostre todos os elementos.
-// 3. Faça um loop que mostre cada elemento do array.
+// 01. Crie um array com 5 nomes e mostre o primeiro e o último.
+// let nomes = ['Rafael', 'Bruna', ' Ana ' , 'Isadora' , 'Roberta'];
+// console.log(nomes[0]);
+// console.log(nomes[4])
+// 02. Adicione um nome novo ao array e mostre todos os elementos.
+//  let nomes = ['Rafael', 'Bruna', ' Ana ' , 'Isadora' , 'Roberta'];
+//  nomes.push('Carlos');
+//  for (let i = 0; i < nomes.length; i++) {
+//     console.log(nomes[i]);
+//  }
+// 03. Faça um loop que mostre cada elemento do array.
+// let personagens = ['Hello Kitty' , 'Kuromi', 'My Melody' , 'Cinnamoroll' , 'Pompompurin'];
+// for (let i = 0; i < personagens.length; i++) {
+//     console.log(personagens[i]);
+// }
 
 //  7. Objetos
 // 1. Crie um objeto carro com propriedades marca, modelo e ano. Mostre no
 // console.
+// let carro ={ 
+//    Marca: 'Volkswagen',
+//    Modelo : 'Nivus', 
+//    Ano : 2020 
+
+// }; 
+// console.log(carro.Marca); 
+// console.log(carro.Modelo);
+// console.log(carro.Ano);
 // 2. Crie um objeto aluno com nome, idade e notas. Mostre o nome e a
 // média.
-// 3. Crie um array de objetos produtos com pelo menos 3 itens (nome e
-// preço). Mostre todos.
+// let aluno = {
+//     Nome: 'Luiza', 
+//     Idade:18, 
+//     Notas: [9, 8, 10]
 
+// }; 
+// let media = (aluno.Notas[0] + aluno.Notas[1] + aluno.Notas[2]) / 3;
+// console.log(aluno.Nome);
+// console.log(+ media); 
+
+// 03. Crie um array de objetos produtos com pelo menos 3 itens (nome e
+// preço). Mostre todos.
+// let produtos = [  item1 =  { Nome: 'Leite', 
+//                              Preço:4.50 
+//                             }, 
+//                    item2 =  {Nome:'Amaciante', 
+//                              Preço: 23.00   
+//                             }, 
+//                    item3 = {Nome:'Sabão em pó',
+//                                 Preço: 15.00
+//                             }, 
+
+
+//         ];   
+// console.log(produtos[0]);
+// console.log(produtos[1]);
+// console.log(produtos[2]);
 //  8. Eventos DOM
 // 1. Crie um botão que, ao clicar, troque a cor de fundo da página.
+document.getElementById("botao").onclick = function () {
+    document.body.style.backgroundColor = "lightblue";
+}
 // 2. Crie um input e um botão. Quando clicar, mostre no console o texto
 // digitado.
 // 3. Crie um botão que conte quantos cliques já foram feitos.
